@@ -1,6 +1,11 @@
-def calculate_total(price, quantity):
+
+def calculate_total(price, quantity, percentageTax=0):
     total = price * quantity
+    total += total * percentageTax / 100
     return total
+
+
+
 
 
 def main():
@@ -12,3 +17,5 @@ def main():
 
 
 main()
+
+
